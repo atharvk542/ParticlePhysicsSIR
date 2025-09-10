@@ -1,3 +1,5 @@
+// Atharv Kanchi - Prime checker
+
 #include <iostream>
 #include <cmath>
 
