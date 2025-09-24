@@ -27,11 +27,11 @@ std::vector<int> histogram(std::vector<int> in, int bins, int min, int max)
 
 	for (int value : in) 
 	{
-		if (value >= min && value <= max) 
+		if (value >= min && value <= max) // this is simplified
 		{
 			// automatically truncated to an int, so no rounding needed
 			int bin_width = bins / range;
-			int bin_index = (value - min) * bin_width;
+			int bin_index = (value - min) * bin_width; // take the "true value" of the input and scale by width
 			// ensure we don't go out of bounds for the last bin
 			if (bin_index >= bins) bin_index = bins - 1;
 			out[bin_index]++;
