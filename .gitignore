@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+
+# please vscode go away
+.vscode
+/.vscode
+*.vscode
+.vscode/
+./vscode
